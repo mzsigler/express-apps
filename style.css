@@ -1,0 +1,44 @@
+body{
+    background: rgb(17,178,229);
+    background: linear-gradient(90deg, rgba(17,178,229,1) 29%, rgba(0,113,255,1) 100%);
+}
+
+.logo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    color: blue;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.nav-bar {
+    align-items: center;
+    display: flex;
+    height: 100px;
+    width: 95vw;
+    margin: auto;
+    justify-content: space-between;
+}
+
+button {
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: blue;
+    border-radius: 10px;
+    border: 3px solid blue;
+}
+
+button:hover {
+    background-color: aquamarine;
+}
+
+.display {
+    border: 3px solid blue;
+    border-radius: 10px;
+    height: 60vh;
+    width: 95vw;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
