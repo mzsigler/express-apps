@@ -26,9 +26,9 @@ function calculateTax() {
     if (isNaN(salePrice)) {
         p.innerText = `That is not a number, my dude.`;
         results.appendChild(p);
-    }
-
-    let stateTax = salePrice * .07;
+        
+    } else {
+        let stateTax = salePrice * .07;
         p.innerText+= `State Tax is $${stateTax.toFixed(2)}
     `
 
@@ -73,6 +73,9 @@ function calculateTax() {
     `
 
     results.appendChild(p);
+    }
+
+
 
 }
 
