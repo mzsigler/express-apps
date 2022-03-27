@@ -21,7 +21,7 @@ body{
 }
 
 button {
-    padding: 20px;
+    padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     color: blue;
@@ -34,8 +34,8 @@ button:hover {
 }
 
 .greeting {
-    /* display: none; */
     border: 3px solid blue;
+    align-self: center;
     border-radius: 10px;
     height: 60vh;
     width: 95vw;
