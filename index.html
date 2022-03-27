@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="app.js", defer></script>
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,14 +12,26 @@
     <div class="logo">Express Apps</div>
 
     <div class="nav-bar">
-        <button>Tax Calculator</button>
+        <button id="tax">Tax Calculator</button>
         <button>Maintenance</button>
         <button>Balance Due</button>
         <button>Something else</button>
     </div>
 
-    <div class="display">
+    <div class="greeting" id="greeting">
         Your output will go here depending on which button you press. 
+    </div>
+
+    <div class="tax-calc" id="taxCalc">
+        <div class="taxCalcContainer">
+
+        <input id="taxInput" placeholder="Sale Price"></input>
+        <button id="calculate">Calculate</button>    
+        
+        <div id="taxResults">
+            
+        </div>
+        </div>
     </div>
 </body>
 </html>
