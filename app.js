@@ -1,6 +1,8 @@
 const taxCalcNav = document.getElementById("tax");
-const greetingDiv = document.getElementById('greeting')
+const greetingDiv = document.getElementById('greeting');
 const taxCalcDiv = document.getElementById("taxCalc");
+const balDueButton = document.getElementById("balDueBtn");
+
 
 taxCalcNav.addEventListener("click", function() {
     taxCalcNavClick();
@@ -10,9 +12,16 @@ taxCalcNav.addEventListener("click", function() {
 
 function taxCalcNavClick() {
   greetingDiv.style.display = 'none';
+  balDue.style.display = 'none';
   taxCalcDiv.style.display = 'flex';
 
 };
+
+function balDueClick() {
+  greetingDiv.style.display = 'none';
+  taxCalcDiv.style.display = 'none';
+  balDue.style.display = 'flex';
+}
 
 const calcInput = document.getElementById("taxInput");
 const calcButton = document.getElementById("calculate");
@@ -82,3 +91,7 @@ function calculateTax() {
 calcButton.addEventListener('click', function(){
     calculateTax();
 });
+
+balDueButton.addEventListener("click", function() {
+    balDueClick();
+})

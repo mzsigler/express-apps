@@ -14,7 +14,7 @@
     <div class="nav-bar">
         <button id="tax">Tax Calc</button>
         <button>Maintenance</button>
-        <button>Balance Due</button>
+        <button id="balDueBtn">Balance Due</button>
     </div>
 <div class="display-container">
     <div class="greeting" id="greeting">
@@ -31,6 +31,56 @@
             
         </div>
         </div>
+    </div>
+
+    <div class="balDue" id="balDue">
+        <form>
+    <fieldset>
+      <legend>Add a New Balance</legend>
+      <div>
+        <label>First Name</label>
+        <input type="text" name="firstName">
+      </div>
+      <div>
+        <label>Last Name</label>
+        <input type="text" name="lastName">
+      </div>
+      <div>
+        <label>Driver's License Number</label>
+        <input type="text" name="licenseNumber">
+      </div>
+      <div>
+        <label>Contract Date</label>
+        <input type="date" name="contractDate">
+      </div>
+      <div>
+        <label>Amount</label>
+        <input type="number" name="amount">
+      </div>
+      <div>
+        <label>Damages?</label>
+        <input type="radio" name="damages" id="damages">
+      </div>
+      <div>
+        <label>Notes</label>
+        <textarea name="notes"></textarea>
+      </div>
+      <div>
+        <button type="submit">Submit</button>
+      </div>
+    </fieldset>
+          <br>
+      <fieldset>
+          <legend>View or Modify an Existing Balance</legend>
+          <label>Last Name</label>
+          <input type='text' name="lastName">
+          <label>Driver's License Number</label>
+          <input type ="text" name="licenseNumber">
+          <button type="submit">Search</button>
+          
+      </fieldset>
+        </form>
+    
     </div>
     </div>
 </div>
