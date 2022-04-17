@@ -23,10 +23,16 @@ function balDueClick() {
   balDue.style.display = 'flex';
 }
 
+function taxCalcClear() {
+    const results = document.getElementById('taxResults');
+    results.innerText = "";
+}
+
 const calcInput = document.getElementById("taxInput");
 const calcButton = document.getElementById("calculate");
 
 function calculateTax() {
+    taxCalcClear();
     const inputValue = calcInput.value;
     const salePrice = parseInt(inputValue);
     const results = document.getElementById('taxResults');
