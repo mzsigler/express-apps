@@ -1,4 +1,4 @@
-const taxCalcNav = document.getElementById("tax");
+const taxCalcNav = document.getElementById("taxBtn");
 const greetingDiv = document.getElementById('greeting');
 const taxCalcDiv = document.getElementById("taxCalc");
 const balDueButton = document.getElementById("balDueBtn");

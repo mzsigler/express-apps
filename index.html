@@ -12,7 +12,7 @@
     <div class="logo">Express Apps</div>
 
     <div class="nav-bar">
-        <button id="tax">Tax Calc</button>
+        <button id="taxBtn">Tax Calc</button>
         <button>Maintenance</button>
         <button id="balDueBtn">Balance Due</button>
     </div>
@@ -59,11 +59,14 @@
       </div>
       <div>
         <label>Damages?</label>
-        <input type="radio" name="damages" id="damages">
+        <input type="radio" name="damages" id="yes" value="yes">
+        <label for="yes">Yes</label>
+        <input type="radio" name="damages" id="no" value="no">
+        <label for="no">No</label>
       </div>
       <div>
         <label>Notes</label>
-        <textarea name="notes"></textarea>
+        <p><textarea name="notes"></textarea></p>
       </div>
       <div>
         <button type="submit">Submit</button>
